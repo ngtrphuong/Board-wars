@@ -18,7 +18,7 @@
     <description>Public Auth for Board Wars</description>
     <properties>
         <node.version>v10.15.0</node.version>
-        <npm.version>6.3.0</npm.version>
+        <npm.version>6.4.1</npm.version>
         <project.version>0.0.1</project.version>
         <mailboxvalidator.version>1.0.0</mailboxvalidator.version>
         <argon2.version>1.64</argon2.version>

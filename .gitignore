@@ -52,3 +52,10 @@ public-auth/src/main/interface/node/
 public-auth/src/main/interface/main/
 public-gateway/src/main/resources/public/
 *.DS_Store
+
+### Log, temp files ###
+
+*.log
+*.*~
+**/*.log
+**/*.*~

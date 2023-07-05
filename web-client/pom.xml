@@ -13,8 +13,10 @@
     <packaging>jar</packaging>
     <properties>
         <node.version>v10.15.0</node.version>
-        <npm.version>6.3.0</npm.version>
+        <npm.version>6.4.1</npm.version>
         <project.version>0.0.1</project.version>
+        <!-- Fix re-package issue: https://stackoverflow.com/a/58464765/6124251 -->
+        <spring-boot.repackage.skip>true</spring-boot.repackage.skip>
     </properties>
 
 
@@ -44,7 +46,7 @@
                         </configuration>
                         <phase>initialize</phase>
                     </execution>
-                    <!--<execution>
+                    <execution>
                         <id>npm-install</id>
                         <goals>
                             <goal>npm</goal>
@@ -52,7 +54,7 @@
                         <configuration>
                             <arguments>install</arguments>
                         </configuration>
-                    </execution>-->
+                    </execution>
                     <!-- Set main + library versions to match artifact -->
                     <execution>
                         <id>npm-version</id>
