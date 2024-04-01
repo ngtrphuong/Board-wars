@@ -47,7 +47,7 @@ public class AuthService {
 
     public Mono<AuthenticatedResponse> getAuthLinkHandler(String type, String dest){
         AuthenticatedResponse response = new AuthenticatedResponse();
-        response.setAdditionalInfo("/oauth2/authorization/" + type + (StringUtils.hasText(dest) && dest.equals("ui")? "?" + RouteUtil.Internal.AUTH_POPUP_RAW_QUERY : ""));
+        response.setAdditionalInfo("/oauth2/authorization/" + type + (StringUtils.hasText(dest) && "ui".equals(dest)? "?" + RouteUtil.Internal.AUTH_POPUP_RAW_QUERY : ""));
         return  Mono.just(response);
     }
 
