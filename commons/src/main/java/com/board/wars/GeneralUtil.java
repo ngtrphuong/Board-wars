@@ -1,5 +1,6 @@
 package com.board.wars;
 
+import java.security.SecureRandom;
 import java.util.Random;
 import java.util.function.Consumer;
 
@@ -11,6 +12,6 @@ public class GeneralUtil {
     }
 
     static public Long randomCodeGenerator(long lower, long upper) {
-        return lower+((long)(new Random().nextDouble()*(upper-lower)));
+        return lower+((long)(new SecureRandom().nextDouble()*(upper-lower)));
     }
 }
